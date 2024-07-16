@@ -2,7 +2,7 @@ tableextension 50001 "TableExt 120 PurchRcptHead" extends "Purch. Rcpt. Header"
 {
     fields
     {
-        field(50000; "ISPL Work Description"; Blob)
+        field(50000; "Work Description"; Blob)
         {
             DataClassification = ToBeClassified;
             Caption = 'Work Description';

@@ -24,9 +24,9 @@ tableextension 50001 "TableExt 120 PurchRcptHead" extends "Purch. Rcpt. Header"
         TypeHelper: Codeunit "Type Helper";
         InStream: InStream;
     begin
-        CalcFields("ISPL Work Description");
+        CalcFields("Work Description");
         "ISPL Work Description".CreateInStream(InStream, TEXTENCODING::UTF8);
-        exit(TypeHelper.TryReadAsTextWithSepAndFieldErrMsg(InStream, TypeHelper.LFSeparator(), FieldName("ISPL Work Description")));
+        exit(TypeHelper.TryReadAsTextWithSepAndFieldErrMsg(InStream, TypeHelper.LFSeparator(), FieldName("Work Description")));
     end;
 
     var
